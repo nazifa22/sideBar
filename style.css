@@ -1,0 +1,470 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #000;
+}
+/*.parallax {*/
+    /* The image used */
+   /* background-image: url("img/man_smoke.jpg");*/
+
+    /* Set a specific height */
+    /*height: 500px;*/
+
+    /* Create the parallax scrolling effect */
+   /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+.parallax {
+    background-image: url("img/man_smoke.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px;
+}
+.myProgress {
+    width: 100%;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+#myBar1 {
+    width: 95%;
+    height: 30px;
+    background-color: #616161;
+}
+#myBar2 {
+    width: 85%;
+    height: 30px;
+    background-color: #616161;
+}
+#myBar3 {
+    width: 80%;
+    height: 30px;
+    background-color: #616161;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+/* Style the list */
+.price {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #333;
+    color: #ccc;
+    font-size: 20px;
+    padding: 35px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #BFBFBF;
+    padding: 20px;
+    text-align: center;
+    background-color: #ccc;
+}
+/* Grey list item */
+.price .grey {
+    background-color: #ccc;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #aaa;
+    border: none;
+    color: #000;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+.grey a:focus, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email]{
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20px;
+}  
+.aside {
+    width: 8%;
+    height: 104%;
+    background-color: #333;
+    float: left;
+    position: fixed;
+    z-index: 999999;
+    margin-top: 20px;
+}
+.logo{}
+.logo img {
+    width: 100%;
+    opacity: 0.5;
+}
+.vertical-menu{}
+.vertical-menu ul{}
+.vertical-menu ul li {
+    text-align: center;
+    list-style-type: none;
+    padding: 30px 0;
+}
+.active {
+    background-color: #000;
+}
+.vertical-menu ul li:hover {
+    background-color: #000;
+}
+.active:hover {
+    background-color: #CCC !important;
+    color: #000 !important;
+}
+.vertical-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-decoration: none;
+}
+.vertical-menu ul li a i {
+    font-size: 30px;
+    color: #fff;
+}
+.body {
+    background-color: #000;
+    width: 92%;
+    float: right;
+    padding: 0px 100px;
+}
+.banner_section{}
+.banner_section h2 {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-top: 260px;
+    /*padding-right: 50px;*/
+}
+.banner_section p {
+    color: #fff;
+    text-align: right;
+    /*padding-right: 50px;*/
+    letter-spacing: 2px;
+}
+.about_section {
+    padding: 40px 0 0px 0;
+}
+.title {
+    color: white;
+    letter-spacing: 2px;
+}
+.title_2{
+    color: white;
+    letter-spacing: 2px;
+}
+.title_3 {
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    background-color: #8F8F8F;
+    width: 210px;
+    height: 1px;
+    margin-top: 40px;
+    margin-left: -134px;
+}
+.title_2::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: #A2A2A2;
+    margin-top: 47px;
+    margin-left: -151px;
+}
+.title_3::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: #A2A2A2;
+    margin-top: 47px;
+    margin-left: -160px;
+}
+.text {
+    font-size: 13px;
+    padding: 20px 0;
+}
+.about_section h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.skillbar{}
+.skillbar p {
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+.gray_section {
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+    padding: 10px 0;
+}
+.single_section{}
+.single_section h3{}
+.single_section p{}
+.price_section {
+    margin: 25px 0;
+    padding: 0;
+}
+.price_section h4 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    color: #F1F1D7;
+}
+.columns {
+    float: left;
+    width: 50%;
+    padding: 0;
+    padding-right: 22px;
+
+    transition: 1s;
+}
+.columns:last-child {
+    padding-right: 0px !important;
+}
+.reputation_section{}
+.row{}
+.image{}
+.info{}
+.info h4 {
+    color: #757575;
+    font-size: 17px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    margin-top: 22px;
+}
+.info p {
+    color: #757575;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.gallary_section{}
+.row{}
+.column_1 {
+    padding: 0;
+    margin-top: 40px;
+}
+.column_2 {
+    padding: 0;
+    margin-top: 40px;
+}
+.columns:hover li {
+    background-color: #fff;
+    border-bottom: 1px solid #f3f3f3;
+
+    transition: 1s;
+}
+.columns:hover li:first-child {
+    background-color: #616161;
+    transition: 1s;
+
+}
+.columns:hover li:last-child a {
+    background-color: #fff;
+    transition: 1s;
+}
+.image {
+    margin-bottom: 30px;
+}
+.image img {
+    width: 68%;
+    border-radius: 60px;
+}
+.column_1 img {
+    width: 100%;
+    padding: 15px 15px 15px 0;
+    transition: 1s;
+}
+.column_1 img:hover {
+    opacity: 0.8;
+    transition: 1s;
+    transform: scale(1.1, 1.1);
+}
+.column_2 img {
+    width: 100%;
+    padding: 15px 0px 15px 15px;
+    transition: 1s;
+}
+.column_2 img:hover {
+    opacity: 0.6;
+    transition: 1s;
+    transform: scale(1.1, 1.1);
+}
+.contact_section{}
+.contact_section i {
+    font-size: 30px;
+    color: #fff;
+    padding: 5px 0;
+}
+.contact_section i p {
+    float: right;
+    margin-left: 15px;
+    font-size: 15px;
+    margin-top: 8px;
+    color: #757575;
+}
+.contact_section p {
+    margin-top: 30px;
+    color: #757575;
+}
+.contact_section form{}
+.contact_section p a{}
+.icons i {
+    font-size: 20px;
+    margin-top: 20px;
+    padding-right: 8px;
+    color: #747474;
+    transition: 1s;
+}
+.icons i:hover {
+    color: #464646;
+    transition: 1s;
+}
+.footer {
+    /* padding: 0; */
+    margin-top: 0px !important;
+}
+.contact_section p a {
+    color: #747474;
+    text-decoration: underline;
+    transition: 1s;
+}
+.contact_section p a:hover {
+    color: #6cc63e;
+    transition: 1s;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    border-radius: 0px;
+}
+i:hover {
+    color: #6C6C6C;
+    transition: 1s;
+}
+i {
+    transition: 1s;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 0px !important;
+}
+button .fa.fa-paper-plane {
+    color: #000;
+    font-size: 17px;
+    padding-right: 5px;
+}
+.btn-default {
+    color: #000;
+    background-color: #CCC !important;
+    border-color: #CCC;
+    margin-top: 20px !important;
+    padding: 13px 10px !important;
+    font-size: 15px !important;
+    transition: 1s;
+}
+.btn.btn-default:hover {
+    background-color: #a7a7a7 !important;
+    border-color: #a7a7a7 !important;
+    transition: 1s;
+    color: #000;
+}
+.contact_section form button {
+    margin-top: 0px !important;
+    text-transform: uppercase;
+    font-size: 13px !important;
+    padding: 8px 20px !important;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.w3-animate-left {
+    position: relative;
+    animation: animateleft 1s;
+}
+.w3-animate-right {
+    position: relative;
+    animation: animateleft 1s;
+}
